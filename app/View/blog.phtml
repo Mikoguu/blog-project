@@ -1,0 +1,51 @@
+<style>
+    .message { margin: 5px 0 10px 5px; border: 1px solid grey; width: 450px; min-height: 100px; padding: 10px 10px}
+    .author { margin-left: 10px; }
+    .text { padding-left: 15px; padding-top: 15px; }
+    .date {color: grey; font-size: 11px;}
+    .admin a { color: #46468b; float: right; padding-right: 15px; }
+</style>
+
+Список сообщений: <br><br>
+<?php
+/** @var \App\Model\Message */
+/** @var \App\Model\User */
+$user = $this->user;
+$isAdmin = $user->isAdmin();
+$messages = $this->messages;
+
+?>
+<?php if($messages): ?>
+    <?php foreach ($messages as $message): 
+    $messageId = $message->getId();
+    $messageText = nl2br($message->getText());
+    $messageImage = $message->getImage();
+    $author = $message->getAuthor();
+    $authorId = $author->getId();
+    $authorName = $author->getName();
+        ?>
+        <div class="message">
+            <?php if ( $isAdmin == true ) : ?>
+            <div class="admin">
+                <a href="/admin/deleteMessage/?id=<?=$messageId?>">delete</a>
+            </div>
+            <?php endif; ?>
+            <span class="date"><?=$message->getCreatedAt();?> </span>
+            <span class="author">User id: <?=htmlspecialchars($authorId);?></span> 
+            <div class="text"><?=htmlspecialchars(nl2br($messageText));?></div>
+            <?php if (($messageImage)) :?>
+                <div><img src="/images/<?=$messageImage;?>" style="width: 150px;"></div>
+            <?php endif;?>
+        </div>
+    <?php endforeach; ?>
+<?php else: ?>
+    Сообщений пока нет
+    <br><br>
+<?php endif; ?>
+
+Добавить сообщение
+<form enctype="multipart/form-data" action="/blog/addMessage" method="post">
+    <textarea style="width: 250px; height: 150px;" type="text" value="" name="text"></textarea><br><br>
+    Изображение: <input type="file" name="image"><br>
+    <input type="submit" value="Отправить">
+</form>
