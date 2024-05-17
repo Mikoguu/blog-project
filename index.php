@@ -11,3 +11,4 @@ $route->add('login', \App\Controller\Login::class);
 
 $app = new \Base\Application($route);
 $app->run();
+

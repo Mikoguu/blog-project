@@ -33,7 +33,7 @@ class View
         return $data;
     }
 
-    /*public function renderTwig(string $tpl, $data = [])
+    public function renderTwig(string $tpl, $data = [])
     {
         if (!$this->twig) {
             $loader = new \Twig\Loader\FilesystemLoader($this->templatePath);
@@ -41,7 +41,7 @@ class View
         }
 
         return $this->twig->render($tpl, $data);
-    } */
+    }
 
 }
 ?>

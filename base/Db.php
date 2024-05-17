@@ -110,7 +110,6 @@ class Db
         $this->log[] = [$query, microtime(1) - $t, $_method, $affectedRows];
 
         return $affectedRows;
-        var_dump($affectedRows);
     }
 
     public function lastInsertId()

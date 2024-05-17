@@ -55,10 +55,10 @@ class Blog extends AbstractController
 
     }
 
-    /*public function twig()
+    public function twig()
     {
-        return $this->view->renderTwig('test.twig', ['var' => 'ololo']);
-    } */
+        return $this->view->renderTwig('testTemplate.twig', ['data' => 'test-data']);
+    }
  
     private function error()
     {

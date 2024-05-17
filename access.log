@@ -2505,3 +2505,64 @@
 ::1 - - [14/May/2024:17:25:27 +0300] "GET /adminer-4.8.1-mysql.php?server=127.0.0.1&username=root&db=Loftschool_db&dump= HTTP/1.1" 200 9415
 ::1 - - [14/May/2024:17:25:34 +0300] "POST /adminer-4.8.1-mysql.php?server=127.0.0.1&username=root&db=Loftschool_db&dump= HTTP/1.1" 200 1828
 ::1 - - [14/May/2024:17:25:54 +0300] "-" 408 -
+::1 - - [14/May/2024:17:30:57 +0300] "GET / HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:30:57 +0300] "GET /blog HTTP/1.1" 200 1636
+::1 - - [14/May/2024:17:31:17 +0300] "-" 408 -
+::1 - - [14/May/2024:17:31:25 +0300] "GET /blog HTTP/1.1" 200 2148
+::1 - - [14/May/2024:17:31:27 +0300] "GET /admin/deleteMessage/?id=43 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:31:27 +0300] "GET /blog HTTP/1.1" 200 1793
+::1 - - [14/May/2024:17:31:39 +0300] "GET /blog HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:31:39 +0300] "GET /login HTTP/1.1" 200 1478
+::1 - - [14/May/2024:17:31:39 +0300] "GET /favicon.ico HTTP/1.1" 404 14
+::1 - - [14/May/2024:17:31:50 +0300] "GET /adminer-4.8.1-mysql.php?server=127.0.0.1&username=root&db=Loftschool_db&select=Users HTTP/1.1" 403 4586
+::1 - - [14/May/2024:17:31:50 +0300] "GET /adminer-4.8.1-mysql.php?file=default.css&version=4.8.1 HTTP/1.1" 200 6811
+::1 - - [14/May/2024:17:31:50 +0300] "GET /adminer-4.8.1-mysql.php?file=functions.js&version=4.8.1 HTTP/1.1" 200 27548
+::1 - - [14/May/2024:17:31:50 +0300] "GET /adminer-4.8.1-mysql.php?file=favicon.ico&version=4.8.1 HTTP/1.1" 200 318
+::1 - - [14/May/2024:17:31:54 +0300] "POST /adminer-4.8.1-mysql.php?server=127.0.0.1&username=root&db=Loftschool_db&select=Users HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:31:54 +0300] "GET /adminer-4.8.1-mysql.php?server=127.0.0.1&username=root&db=Loftschool_db&select=Users HTTP/1.1" 200 33232
+::1 - - [14/May/2024:17:31:54 +0300] "GET /adminer-4.8.1-mysql.php?file=jush.js&version=4.8.1 HTTP/1.1" 200 44575
+::1 - - [14/May/2024:17:32:13 +0300] "POST /login/auth HTTP/1.1" 200 47
+::1 - - [14/May/2024:17:32:14 +0300] "GET /login HTTP/1.1" 200 1478
+::1 - - [14/May/2024:17:32:16 +0300] "POST /login/auth HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:32:16 +0300] "GET /blog HTTP/1.1" 200 1793
+::1 - - [14/May/2024:17:32:31 +0300] "POST /blog/addMessage HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:32:31 +0300] "GET /blog HTTP/1.1" 200 2268
+::1 - - [14/May/2024:17:32:31 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:32:35 +0300] "POST /blog/addMessage HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:32:35 +0300] "GET /blog HTTP/1.1" 200 2617
+::1 - - [14/May/2024:17:32:35 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:32:51 +0300] "-" 408 -
+::1 - - [14/May/2024:17:33:05 +0300] "GET /blog HTTP/1.1" 200 2617
+::1 - - [14/May/2024:17:33:05 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:33:06 +0300] "POST /blog/addMessage HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:33:06 +0300] "GET /blog HTTP/1.1" 200 2966
+::1 - - [14/May/2024:17:33:07 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:33:08 +0300] "GET /admin/deleteMessage/?id=48 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:33:08 +0300] "GET /blog HTTP/1.1" 200 2617
+::1 - - [14/May/2024:17:33:08 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:33:09 +0300] "GET /admin/deleteMessage/?id=47 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:33:09 +0300] "GET /blog HTTP/1.1" 200 2268
+::1 - - [14/May/2024:17:33:09 +0300] "GET /images/d2317e916bf51c6851e04f262a7384e5c21a65cc.jpg HTTP/1.1" 200 289256
+::1 - - [14/May/2024:17:33:25 +0300] "-" 408 -
+::1 - - [14/May/2024:17:34:58 +0300] "GET /admin/deleteMessage/?id=46 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:34:58 +0300] "GET /blog HTTP/1.1" 200 1793
+::1 - - [14/May/2024:17:34:59 +0300] "GET /admin/deleteMessage/?id=45 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:34:59 +0300] "GET /blog HTTP/1.1" 200 1436
+::1 - - [14/May/2024:17:34:59 +0300] "GET /admin/deleteMessage/?id=44 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:34:59 +0300] "GET /blog HTTP/1.1" 200 1082
+::1 - - [14/May/2024:17:35:00 +0300] "GET /admin/deleteMessage/?id=42 HTTP/1.1" 302 -
+::1 - - [14/May/2024:17:35:00 +0300] "GET /blog HTTP/1.1" 200 769
+::1 - - [14/May/2024:17:35:18 +0300] "-" 408 -
+::1 - - [15/May/2024:15:54:37 +0300] "GET / HTTP/1.1" 302 -
+::1 - - [15/May/2024:15:54:37 +0300] "GET /blog HTTP/1.1" 200 769
+::1 - - [15/May/2024:16:21:13 +0300] "GET / HTTP/1.1" 302 -
+::1 - - [15/May/2024:16:21:13 +0300] "GET /blog HTTP/1.1" 200 769
+::1 - - [15/May/2024:16:21:14 +0300] "GET /favicon.ico HTTP/1.1" 404 14
+::1 - - [15/May/2024:16:21:19 +0300] "POST /blog/addMessage HTTP/1.1" 302 -
+::1 - - [15/May/2024:16:21:19 +0300] "GET /blog HTTP/1.1" 200 1075
+::1 - - [15/May/2024:16:21:24 +0300] "POST /blog/addMessage HTTP/1.1" 302 -
+::1 - - [15/May/2024:16:21:24 +0300] "GET /blog HTTP/1.1" 200 1430
+::1 - - [15/May/2024:16:21:44 +0300] "-" 408 -
+::1 - - [16/May/2024:10:59:14 +0300] "-" 408 -
+::1 - - [17/May/2024:10:58:18 +0300] "GET / HTTP/1.1" 302 -
+::1 - - [17/May/2024:10:58:18 +0300] "GET /blog HTTP/1.1" 200 1430
