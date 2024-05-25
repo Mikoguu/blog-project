@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\Model\Message;
+use App\Model\Eloquent\Message;
 use Base\AbstractController;
 
 class Blog extends AbstractController
@@ -12,21 +12,22 @@ class Blog extends AbstractController
             $this->redirect('/login');
         }
         $messages = Message::getList();
-        if ($messages) {
+    
+        /* if ($messages) {
             $userIds = array_map(function (Message $message) {
                 return $message->getAuthorId();
             }, $messages);
-            $users = \App\Model\User::getByIds($userIds);
+            $users = \App\Model\Eloquent\User::getByIds($userIds);
             array_walk($messages, function (Message $message) use ($users) {
                 if (isset($users[$message->getAuthorId()])) {
                     $message->setAuthor($users[$message->getAuthorId()]);
                 }
             });
-        }
+        } */
         return $this->view->render('blog.phtml', [
             'messages' => $messages,
             'user' => $this->getUser()
-        ]);
+        ]); 
     }
 
     public function addMessage()
@@ -50,6 +51,7 @@ class Blog extends AbstractController
             $message->loadFile($_FILES['image']['tmp_name']);
         }
 
+        var_dump($message);
         $message->save();
         $this->redirect('/blog');
 

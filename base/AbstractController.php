@@ -1,7 +1,7 @@
 <?php
 namespace Base;
 
-use App\Model\User;
+use App\Model\Eloquent\User;
 
 class AbstractController
 {
@@ -52,6 +52,10 @@ class AbstractController
 
     public function preDispatch()
     {
-
+        if ($this->getUser()) {
+            $this->view->assign([
+                'user' =>$this->getUser()
+            ]);
+        }
     }
 }

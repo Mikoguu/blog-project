@@ -8,8 +8,8 @@
 
 Список сообщений: <br><br>
 <?php
-/** @var \App\Model\Message */
-/** @var \App\Model\User */
+/** @var \App\Model\Eloquent\Message */
+/** @var \App\Model\Eloquent\User */
 $user = $this->user;
 $isAdmin = $user->isAdmin();
 $messages = $this->messages;
